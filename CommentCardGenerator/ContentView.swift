@@ -8,39 +8,64 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isFeeling: Bool
-    @State var isStrenuous: Bool
-    var body: some View {
-        Form {
-            VStack {
-                if isFeeling == true {
-                    Button("Feeling: 😁", action: { toggleFeeling()})
-                } else {
-                    Button("Feeling: ☹️", action: { toggleFeeling()})
-                }
-            }
-            Text("I am feeling \(isFeeling ? "happy" : "unhappy") in this subject.")
-            VStack {
-                if isStrenuous == true {
-                    Button("Time: 😁", action: { toggleFeeling()})
-                } else {
-                    Button("Feeling: ☹️", action: { toggleFeeling()})
-                }
-            }
+    @State private var strenuous: Double = 5.0
+    @State private var happiness: Double = 5.0
+    @State private var homework: Bool
+    
+    var feelingHappiness: String {
+        if happiness > 8 {
+            return "extremely happy"
+        } else if happiness > 6 {
+            return "happy"
+        } else if happiness > 3 {
+            return "okay"
+        } else {
+            return "unhappy"
         }
     }
     
-    func toggleFeeling() {
-        isFeeling.toggle()
+    var feelingStrenuous: String {
+        if strenuous > 8 {
+            return "too long a"
+        } else if strenuous > 6 {
+            return "occaisionally a little too much"
+        } else if strenuous > 3 {
+            return "the perfect amount of"
+        } else {
+            return "too little"
+        }
     }
     
-    func toggleStrenuous() {
-        isStrenuous.toggle()
+    var body: some View {
+        let lotsEW = Binding<Bool> (
+                    get : { self.homework },
+                    set : { newValue in
+                        self.homework = newValue
+                    }
+                )
+        
+        VStack {
+            HStack {
+                Text("Happiness: 0")
+                Slider(value: $happiness, in: 0...10, step: 1)
+                Text("10")
+            }.padding()
+            HStack {
+                Text("Time Spent: 0")
+                Slider(value: $strenuous, in: 0...10, step: 1)
+                Text("10")
+            }.padding()
+            Toggle("Too many EWs", isOn: lotsEW)
+            Spacer()
+            Text("I am feeling \(feelingHappiness) in this subject. I spend \(feelingStrenuous) time on this subject.").padding()
+            Spacer()
+        }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(isFeeling: true, isStrenuous: true)
+        ContentView()
     }
 }
