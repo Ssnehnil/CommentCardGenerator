@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WriterView: View {
+struct ContentView: View {
     @State private var strenuous: Double = 5.0
     @State private var happiness: Double = 5.0
     @State var homework: Bool
@@ -68,6 +68,6 @@ struct WriterView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        WriterView(homework: true)
+        ContentView(homework: true)
     }
 }

@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1DB035A827B282E70010D51E /* CommentCardGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035A727B282E70010D51E /* CommentCardGeneratorApp.swift */; };
-		1DB035AA27B282E70010D51E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035A927B282E70010D51E /* ContentView.swift */; };
+		1DB035AA27B282E70010D51E /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035A927B282E70010D51E /* WriterView.swift */; };
 		1DB035AC27B282E90010D51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB035AB27B282E90010D51E /* Assets.xcassets */; };
 		1DB035AF27B282E90010D51E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB035AE27B282E90010D51E /* Preview Assets.xcassets */; };
 		1DB035B927B282E90010D51E /* CommentCardGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035B827B282E90010D51E /* CommentCardGeneratorTests.swift */; };
 		1DB035C327B282E90010D51E /* CommentCardGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035C227B282E90010D51E /* CommentCardGeneratorUITests.swift */; };
 		1DB035C527B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035C427B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift */; };
+		F6C46FE527C6E8D900FBABAF /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1DB035A427B282E70010D51E /* CommentCardGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB035A727B282E70010D51E /* CommentCardGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorApp.swift; sourceTree = "<group>"; };
-		1DB035A927B282E70010D51E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1DB035A927B282E70010D51E /* WriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
 		1DB035AB27B282E90010D51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB035AE27B282E90010D51E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DB035B427B282E90010D51E /* CommentCardGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		1DB035BE27B282E90010D51E /* CommentCardGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB035C227B282E90010D51E /* CommentCardGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITests.swift; sourceTree = "<group>"; };
 		1DB035C427B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				1DB035A727B282E70010D51E /* CommentCardGeneratorApp.swift */,
-				1DB035A927B282E70010D51E /* ContentView.swift */,
+				1DB035A927B282E70010D51E /* WriterView.swift */,
+				F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */,
 				1DB035AB27B282E90010D51E /* Assets.xcassets */,
 				1DB035AD27B282E90010D51E /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB035AA27B282E70010D51E /* ContentView.swift in Sources */,
+				F6C46FE527C6E8D900FBABAF /* MainMenuView.swift in Sources */,
+				1DB035AA27B282E70010D51E /* WriterView.swift in Sources */,
 				1DB035A827B282E70010D51E /* CommentCardGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
