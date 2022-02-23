@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var strenuous: Double = 5.0
     @State private var happiness: Double = 5.0
-    @State private var homework: Bool
+    @State var homework: Bool
     
     var feelingHappiness: String {
         if happiness > 8 {
@@ -66,6 +66,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(homework: true)
     }
 }
