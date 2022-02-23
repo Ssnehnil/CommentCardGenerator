@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var strenuous: Double = 5.0
     @State private var happiness: Double = 5.0
-    @State var homework: Bool
+    @State private var lotsEW = true
     
     var feelingHappiness: String {
         if happiness > 8 {
@@ -36,14 +36,15 @@ struct ContentView: View {
         }
     }
     
+    var homework: String {
+        if lotsEW {
+            return "I find that there is too much EW being set."
+        } else {
+            return "I think that the amount of EW set is fine."
+        }
+    }
+    
     var body: some View {
-        let lotsEW = Binding<Bool> (
-                    get : { self.homework },
-                    set : { newValue in
-                        self.homework = newValue
-                    }
-                )
-        
         VStack {
             HStack {
                 Text("Happiness: 0")
@@ -56,10 +57,10 @@ struct ContentView: View {
                 Text("10")
             }.padding()
             HStack {
-                Toggle("Too many EWs", isOn: lotsEW)
+                Toggle("Too many EWs", isOn: $lotsEW)
             }.padding()
             Spacer()
-            Text("I am feeling \(feelingHappiness) in this subject. I spend \(feelingStrenuous) time on this subject.").padding()
+            Text("I am feeling \(feelingHappiness) in this subject. I spend \(feelingStrenuous) time on this subject. \(homework)").padding()
             Spacer()
         }
         
@@ -68,6 +69,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(homework: true)
+        ContentView()
     }
 }

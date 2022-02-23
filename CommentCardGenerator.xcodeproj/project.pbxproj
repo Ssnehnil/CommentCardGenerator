@@ -15,6 +15,8 @@
 		1DB035C327B282E90010D51E /* CommentCardGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035C227B282E90010D51E /* CommentCardGeneratorUITests.swift */; };
 		1DB035C527B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB035C427B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift */; };
 		F6C46FE527C6E8D900FBABAF /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */; };
+		F6C46FE727C6EBBE00FBABAF /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C46FE627C6EBBE00FBABAF /* ReminderView.swift */; };
+		F6C46FE927C6EBF600FBABAF /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C46FE827C6EBF600FBABAF /* ExportView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		1DB035C227B282E90010D51E /* CommentCardGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITests.swift; sourceTree = "<group>"; };
 		1DB035C427B282E90010D51E /* CommentCardGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		F6C46FE627C6EBBE00FBABAF /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		F6C46FE827C6EBF600FBABAF /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				1DB035A727B282E70010D51E /* CommentCardGeneratorApp.swift */,
-				1DB035A927B282E70010D51E /* WriterView.swift */,
 				F6C46FE427C6E8D900FBABAF /* MainMenuView.swift */,
+				1DB035A927B282E70010D51E /* WriterView.swift */,
+				F6C46FE627C6EBBE00FBABAF /* ReminderView.swift */,
+				F6C46FE827C6EBF600FBABAF /* ExportView.swift */,
 				1DB035AB27B282E90010D51E /* Assets.xcassets */,
 				1DB035AD27B282E90010D51E /* Preview Content */,
 			);
@@ -262,6 +268,8 @@
 			files = (
 				F6C46FE527C6E8D900FBABAF /* MainMenuView.swift in Sources */,
 				1DB035AA27B282E70010D51E /* WriterView.swift in Sources */,
+				F6C46FE727C6EBBE00FBABAF /* ReminderView.swift in Sources */,
+				F6C46FE927C6EBF600FBABAF /* ExportView.swift in Sources */,
 				1DB035A827B282E70010D51E /* CommentCardGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

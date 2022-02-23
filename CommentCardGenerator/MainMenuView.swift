@@ -12,8 +12,30 @@ struct MainMenuView: View {
         NavigationView {
             VStack {
                 HStack {
-                    NavigationLink(destination: ContentView(homework: true)) {
+                    NavigationLink(destination: ContentView()) {
                         Text("Comment Writer")
+                            .foregroundColor(.blue)
+                            .font(.system(size:30))
+                            .fontWeight(.bold)
+                            .padding()
+                    }
+                }
+                HStack {
+                    NavigationLink(destination: ReminderView()) {
+                        Text("Manage Reminders")
+                            .foregroundColor(.blue)
+                            .font(.system(size:30))
+                            .fontWeight(.bold)
+                            .padding()
+                    }
+                }
+                HStack {
+                    NavigationLink(destination: ExportView()) {
+                        Text("Export Comments")
+                            .foregroundColor(.blue)
+                            .font(.system(size:30))
+                            .fontWeight(.bold)
+                            .padding()
                     }
                 }
             }.navigationBarTitle("Comment Card App")
