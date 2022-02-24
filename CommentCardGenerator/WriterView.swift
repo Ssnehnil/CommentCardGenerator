@@ -60,7 +60,7 @@ struct ContentView: View {
                 Toggle("Too many EWs", isOn: $lotsEW)
             }.padding()
             Spacer()
-            Text("I am feeling \(feelingHappiness) in this subject. I spend \(feelingStrenuous) time on this subject. \(homework)").padding()
+            Text("I am feeling \(feelingHappiness) in this subject and I spend \(feelingStrenuous) time on this subject. \(homework)").padding()
             Spacer()
         }
         
